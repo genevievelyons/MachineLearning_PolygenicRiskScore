@@ -31,7 +31,7 @@ Outputs: For each alpha value, the validation RMSE and percentage of variance ex
 
 Output file names have the following format: 
 
-'{}_{}_{}_{}Rel_{}_cvresults_{}.csv'.format(phenotype, race, clumped_unclumped, rel, include_prs, jobindex) 
+`'{}_{}_{}_{}Rel_{}_cvresults_{}.csv'.format(phenotype, race, clumped_unclumped, rel, include_prs, jobindex)`
 
 ------------------------------------------------------------------------------------------------------------------------ 
 
@@ -61,7 +61,7 @@ Outputs: Model weights for the XGBoost model
 
 Output File names have the following format: 
 
-'xgb_{}_{}_{}.sav'.format(var, race, clumped_unclumped) 
+`'xgb_{}_{}_{}.sav'.format(var, race, clumped_unclumped)`
 
 ------------------------------------------------------------------------------------------------------------------------ 
 
@@ -93,7 +93,7 @@ Outputs: Percentage of variance explained for the new population based on the mo
 
 Output File names have the following format: 
 
-'assess_results_by_race_v3.txt' 
+`'assess_results_by_race_v3.txt'`
 
 
 ## Reference
