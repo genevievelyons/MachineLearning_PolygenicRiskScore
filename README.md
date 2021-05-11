@@ -7,7 +7,7 @@ The scripts in the pipeline must be run in the order specified, from a bash scri
 
 ## Documentation
 
-`run_xgb_lasso_jointcv_v2.py`
+`run_xgb_lasso_jointcv.py`
 
 Purpose: Cross-validate for optimal value of alpha. For each list of SNPs from the prior script, execute LASSO and XGBoost using only those SNPs. 
 
@@ -35,7 +35,7 @@ Output file names have the following format:
 
 ------------------------------------------------------------------------------------------------------------------------ 
 
-`run_xgb_lasso_v3_alpha.py`
+`run_xgb_lasso_alpha.py`
 
 Purpose: Given the optimal value of LASSO identified through cross-validation in the above script, execute and save the XGBoost models. 
 
@@ -65,7 +65,7 @@ Output File names have the following format:
 
 ------------------------------------------------------------------------------------------------------------------------ 
 
-`assess_xgb_newpop_v3.py`
+`assess_xgb_newpop.py`
 
 Purpose: Given the saved XGBoost models for each ethnicity and optimal alpha values (identified in the 2 prior scripts), assess the XGBoost models on each permutation of ethnicity (e.g., trained on White, assessed on Black). 
 
