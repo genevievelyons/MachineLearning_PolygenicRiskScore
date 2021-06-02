@@ -33,7 +33,7 @@ GWAS_extract_chromosome <- function(GWASdf, chromosome){
 #### 3
 
 gds_load_chr_TOPMed <- function(chromosome){
-  dirpath <- ""
+  dirpath <- "/yourDBdir/TOPMed/freeze.8/download/minDP0.gds/"
   chrpath = paste("freeze.8.chr",
                   as.character(chromosome), ".pass_and_fail.gtonly.minDP0.gds", sep = "")
   gds.fn <- paste0(dirpath,chrpath)
@@ -80,15 +80,15 @@ gds_to_matrix_snp_TOPMed <- function(genofile_TOPMed, chromosome, snpidlist, sam
   return(data_TOPMed)
 }
 
-phenotypeFile_TOPMedTrain <- "TOPMed_freeze.8_HCHS_SOL_FHS_ARIC_CHS_MESA_CARDIA_CFS_JHS_Phenotypes_Agefixed_MedicationFixedNoTCTGfix_DedupYesRel_train_v1.RData"
+phenotypeFile_TOPMedTrain <- "/yourdir/data/TOPMed_freeze.8_HCHS_SOL_FHS_ARIC_CHS_MESA_CARDIA_CFS_JHS_Phenotypes_Agefixed_MedicationFixedNoTCTGfix_DedupYesRel_train_v1.RData"
 load(phenotypeFile_TOPMedTrain)
-phenotypeFile_TOPMedTrainNR <- "TOPMed_freeze.8_HCHS_SOL_FHS_ARIC_CHS_MESA_CARDIA_CFS_JHS_Phenotypes_Agefixed_MedicationFixedNoTCTGfix_DedupNoRel_train_v1.RData"
+phenotypeFile_TOPMedTrainNR <- "/yourdir/data/TOPMed_freeze.8_HCHS_SOL_FHS_ARIC_CHS_MESA_CARDIA_CFS_JHS_Phenotypes_Agefixed_MedicationFixedNoTCTGfix_DedupNoRel_train_v1.RData"
 load(phenotypeFile_TOPMedTrainNR)
-phenotypeFile_TOPMedTestNR <- "TOPMed_freeze.8_HCHS_SOL_FHS_ARIC_CHS_MESA_CARDIA_CFS_JHS_Phenotypes_Agefixed_MedicationFixedNoTCTGfix_DedupNoRel_validate_v1.RData"
+phenotypeFile_TOPMedTestNR <- "/yourdir/data/TOPMed_freeze.8_HCHS_SOL_FHS_ARIC_CHS_MESA_CARDIA_CFS_JHS_Phenotypes_Agefixed_MedicationFixedNoTCTGfix_DedupNoRel_validate_v1.RData"
 load(phenotypeFile_TOPMedTestNR)
 
-outdirname <- ""
-workdirname <- ""
+outdirname <- "/yourdir/SNP_Lists/extract_distribAgeMedNoRel/"
+workdirname <- "/yourdir/SNP_Lists/unclumped/"
 filelist <- c( "SleepDur_clumped_SNPs_p1e-4.csv",
                "SBP_clumped_SNPs_p1e-4.csv",
                "TC_clumped_SNPs_p1e-4.csv",
