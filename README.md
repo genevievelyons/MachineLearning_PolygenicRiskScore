@@ -100,5 +100,8 @@ Output File names have the following format:
 
 Please reference this work as follows:
 
+[![DOI](https://zenodo.org/badge/366450924.svg)](https://zenodo.org/badge/latestdoi/366450924)
+
+
 
 
